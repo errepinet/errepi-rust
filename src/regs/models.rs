@@ -9,7 +9,7 @@
 
 //! Generic registries domain models.
 //!
-//! Mirrors the pydantic v2 models of `errepi-py` `errepi/regs/models.py`.
+//! Domain models of the regs service.
 
 use serde::{Deserialize, Serialize};
 

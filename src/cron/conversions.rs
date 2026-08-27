@@ -10,7 +10,7 @@
 //! Conversions between cron domain models and the prost-generated messages of
 //! `protos/cron_bridge.proto` (AppInfo included).
 //!
-//! Mirrors `errepi-py` `errepi/cron/conversions.py`.
+//! Conversions between domain models and prost-generated messages.
 
 use std::time::SystemTime;
 

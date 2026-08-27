@@ -10,7 +10,7 @@
 //! Conversions between generic registries domain models and the
 //! prost-generated messages of `protos/generic_regs.proto` (AppInfo included).
 //!
-//! Mirrors `errepi-py` `errepi/regs/__init__.py` `_parse_message` approach:
+//! Conversions between domain models and prost-generated messages:
 //! every message field maps to the domain model field of the same name.
 
 use crate::error::ConversionError;

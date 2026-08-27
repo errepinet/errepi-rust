@@ -9,7 +9,7 @@
 
 //! Client for the Errepi Net Cron microservice (CronBridgeService).
 //!
-//! Mirrors `errepi-py` `errepi/cron/__init__.py`.
+//! Client for the CronBridgeService.
 
 pub mod conversions;
 pub mod models;

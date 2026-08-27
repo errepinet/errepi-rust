@@ -9,10 +9,9 @@
 
 //! Rust bindings for Errepi Net microservices.
 //!
-//! The library mirrors the client surface of `errepi-py`: [`cron::CronConfigurator`]
-//! for the CronBridgeService (`protos/cron_bridge.proto`) and
-//! [`regs::GenericRegsClient`] for the GenericRegsService
-//! (`protos/generic_regs.proto`).
+//! The library provides [`cron::CronConfigurator`] for the CronBridgeService
+//! (`protos/cron_bridge.proto`) and [`regs::GenericRegsClient`] for the
+//! GenericRegsService (`protos/generic_regs.proto`).
 
 pub mod conf;
 pub mod cron;

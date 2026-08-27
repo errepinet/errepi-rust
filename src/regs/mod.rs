@@ -10,7 +10,7 @@
 //! Client for the Errepi Net generic registries microservice
 //! (GenericRegsService).
 //!
-//! Mirrors `errepi-py` `errepi/regs/__init__.py`.
+//! Client for the GenericRegsService.
 
 pub mod conversions;
 pub mod models;

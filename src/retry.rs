@@ -11,7 +11,7 @@
 //! deadline exceeded) are retried with exponential backoff before returning
 //! the last error.
 //!
-//! Mirrors `errepi-py` `errepi/_retry.py`.
+//! Retries transient gRPC failures with exponential backoff.
 
 use std::time::Duration;
 

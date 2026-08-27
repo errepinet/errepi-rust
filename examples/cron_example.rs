@@ -10,8 +10,7 @@
 //! Examples of using the `CronConfigurator` client to interact with the
 //! Errepi Net Cron microservice over gRPC (CronBridgeService).
 //!
-//! Mirrors `errepi-py` `examples/cron_example.py`. Requires a live
-//! CronBridgeService on `localhost:50051`.
+//! Requires a live CronBridgeService on `localhost:50051`.
 
 use std::collections::HashMap;
 use std::time::Duration;

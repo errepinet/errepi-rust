@@ -9,7 +9,7 @@
 
 //! Cron domain models.
 //!
-//! Mirrors the pydantic v2 models of `errepi-py` `errepi/cron/models.py`.
+//! Domain models of the cron service.
 
 use std::collections::HashMap;
 
@@ -52,7 +52,7 @@ pub struct JobExecutionResult {
 
 /// Job execution frequency (hourly, daily, weekly, monthly, or by minute).
 ///
-/// Mirrors the `JobFrequency` RootModel of `errepi-py`.
+/// Job frequency, expressed as one of hour/day/week/month/minute.
 #[derive(Clone, Copy, Debug, PartialEq, Eq, Serialize, Deserialize)]
 #[serde(rename_all = "PascalCase")]
 pub enum JobFrequency {
@@ -125,7 +125,7 @@ pub struct HTTPJob {
 
 /// Generic job type, currently only HTTP is supported.
 ///
-/// Mirrors the `JobType` RootModel of `errepi-py`.
+/// Job type, currently only HTTP jobs.
 #[derive(Clone, Debug, PartialEq, Eq, Serialize, Deserialize)]
 #[serde(rename_all = "PascalCase")]
 pub enum JobType {

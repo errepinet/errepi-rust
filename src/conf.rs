@@ -11,7 +11,7 @@
 
 /// Connection configuration for the cron client.
 ///
-/// Mirrors `CronClientConfiguration` of `errepi-py`.
+/// Configuration for the cron service client.
 #[derive(Clone, Debug, PartialEq, Eq)]
 pub struct CronClientConfiguration {
     /// Host of the cron microservice.
@@ -37,7 +37,7 @@ impl Default for CronClientConfiguration {
 
 /// Connection configuration for the generic registries client.
 ///
-/// Mirrors `RegsClientConfiguration` of `errepi-py`.
+/// Configuration for the regs service client.
 #[derive(Clone, Debug, PartialEq, Eq)]
 pub struct RegsClientConfiguration {
     /// Host of the generic registries microservice.

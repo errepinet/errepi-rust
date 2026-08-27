@@ -10,8 +10,7 @@
 //! Shared domain models.
 //!
 //! `AppInfo` is defined in both service protos (`cron_bridge.proto`,
-//! `generic_regs.proto`) and mirrors the `errepi.models.AppInfo` pydantic
-//! model of `errepi-py`.
+//! `generic_regs.proto`).
 
 use serde::{Deserialize, Serialize};
 

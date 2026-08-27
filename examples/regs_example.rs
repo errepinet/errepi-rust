@@ -11,8 +11,8 @@
 //! Errepi Net generic registries microservice over gRPC (GenericRegsService).
 //!
 //! Shows every RPC of the service, both without filter and with the optional
-//! prefix search filter. Mirrors `errepi-py` `examples/regs_example.py`.
-//! Requires a live GenericRegsService on `localhost:50052`.
+//! prefix search filter. Requires a live GenericRegsService on
+//! `localhost:50052`.
 
 use errepi_rs::conf::RegsClientConfiguration;
 use errepi_rs::regs::GenericRegsClient;
