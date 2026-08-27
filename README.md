@@ -5,20 +5,23 @@ Rust bindings for Errepi Net microservices (gRPC, tonic). Pure client library, n
 ## Requirements
 
 - Rust edition 2024, rustc >= 1.85
-- `protoc` on PATH (libprotoc 3.21.12 in use) — required at build time to compile the gRPC protos
-- `protos/` git submodule checked out (`git submodule update --init`)
+
+Consumers need neither `protoc` nor the protos submodule: released tags ship the pre-generated protobuf code. `protoc` (libprotoc 3.21.12 in use) and the `protos/` submodule are only required to regenerate code from the protos (development).
 
 ## Add as dependency
+
+For a specific release version (recommended):
+
+```toml
+[dependencies]
+errepi-rs = { git = "ssh://git@github.com/errepinet/errepi-rs.git", tag = "v0.1.0" }
+```
+
+For the latest commit on main:
 
 ```toml
 [dependencies]
 errepi-rs = { git = "ssh://git@github.com/errepinet/errepi-rs.git" }
-```
-
-For a specific version/tag:
-
-```toml
-errepi-rs = { git = "ssh://git@github.com/errepinet/errepi-rs.git", tag = "v0.1.0" }
 ```
 
 ## Crate layout
@@ -110,6 +113,14 @@ cargo build
 cargo test
 cargo clippy --all-targets -- -D warnings
 ```
+
+## Release
+
+```bash
+./release.sh 0.1.0
+```
+
+Runs tests, bumps the version in `Cargo.toml` if needed, commits, tags `v0.1.0` and pushes branch + tag. Install the release with the `tag` dependency form above.
 
 ## License
 
