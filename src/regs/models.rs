@@ -4,9 +4,7 @@
  * Copyright © 2023-2026 Errepi Net S.R.L.
  * Author: Valerio Faiuolo <valerio.faiuolo@errepinet.it>
  *
- * All rights reserved. This software is the property of Errepi Net S.R.L.
- * Unauthorized copying, modification, distribution, or use of this software,
- * via any medium, is strictly prohibited without express written permission.
+ * Licensed under the MIT License. See the LICENSE file for details.
  */
 
 //! Generic registries domain models.

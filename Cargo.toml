@@ -5,7 +5,7 @@ edition = "2024"
 rust-version = "1.85"
 description = "Rust bindings for Errepi Net microservices"
 authors = ["Valerio Faiuolo <valerio.faiuolo@errepinet.it>"]
-license = "Proprietary"
+license = "MIT"
 build = "build.rs"
 
 [dependencies]
